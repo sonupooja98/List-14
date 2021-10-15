@@ -93,6 +93,10 @@ class operations{
 		newNode.next = tempNode;
 
 	}
+	
+	public void pop() {
+		this.head=this.head.next;
+	}
 
 }
 
@@ -176,7 +180,11 @@ public	class LinkListMain{
 		case 3:
 
 			obj.insertInBetewwn();
-			break;		
+			break;	
+				
+		case 4:
+			obj.pop();
+			break;
 
 		default:
 			System.out.println("Invalid Choice");
