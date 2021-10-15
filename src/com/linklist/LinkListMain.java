@@ -132,6 +132,22 @@ class LinkList {
 		link.print();  
 
 	}
+	
+	public void pop() {
+		this.head=this.head.next;
+	}
+
+	public void deleteEnd() {
+		
+		Node tempNode=head;
+		while(!tempNode.next.equals(tail))
+		{
+			tempNode=tempNode.next;
+		}
+			this.tail=tempNode;
+			tempNode.next=null;
+			
+	}
 
 
 
