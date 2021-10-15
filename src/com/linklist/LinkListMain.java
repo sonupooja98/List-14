@@ -177,6 +177,16 @@ public	class LinkListMain{
 
 			obj.insertInBetewwn();
 			break;		
+				
+		case 4:
+
+			obj.deleteFirstNode();
+			break;	
+		case 5:
+
+			obj.deleteLastNode();
+			break;	
+
 
 		default:
 			System.out.println("Invalid Choice");
