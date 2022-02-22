@@ -132,6 +132,22 @@ class LinkList {
 		link.print();  
 
 	}
+	
+	public void pop() {
+		this.head=this.head.next;
+	}
+
+	public void deleteEnd() {
+		
+		Node tempNode=head;
+		while(!tempNode.next.equals(tail))
+		{
+			tempNode=tempNode.next;
+		}
+			this.tail=tempNode;
+			tempNode.next=null;
+			
+	}
 
 
 
@@ -177,6 +193,16 @@ public	class LinkListMain{
 
 			obj.insertInBetewwn();
 			break;		
+				
+		case 4:
+
+			obj.deleteFirstNode();
+			break;	
+		case 5:
+
+			obj.deleteLastNode();
+			break;	
+
 
 		default:
 			System.out.println("Invalid Choice");
